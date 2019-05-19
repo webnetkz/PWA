@@ -20,6 +20,12 @@
 
     <body>
         
+        <header>
+            <h1 class="indexHeader">EPM</h1>
+        </header>
+
+        
+
         <script>
              // Проверка на поддержку service worker
             if('serviceWorker' in navigator) {
