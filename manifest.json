@@ -16,8 +16,8 @@
       }
     ],
     "start_url": "/",
-    "background_color": "rgb(0, 173, 239)",
-    "theme_color": "rgb(0, 173, 239)",
+    "background_color": "rgb(255, 255, 255)",
+    "theme_color": "rgb(0, 0, 0)",
     "display": "fullscreen",
     "prefer_related_applications": false
   }

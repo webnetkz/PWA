@@ -1,3 +1,16 @@
-<IfModule dir_module>
-    DirectoryIndex index.php
-</IfModule>
+# Добавление кодировки по умолчанию
+AddDefaultCharset UTF-8
+# Запуск движка
+RewriteEngine on
+# Убераем у файлов расширение .php при помощи регулярного выржения
+#RewriteRule ^([^.?]+)$ %{REQUEST_URI}.php [L]
+#RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+#RewriteRule .* - [L,R=404]
+
+# Конфиг для единой точки вхождения в приложение
+# Если это не файл
+RewriteCond %{REQUEST_FILENAME} !-f
+# Если не директория
+RewriteCond %{REQUEST_FILENAME} !-d
+# То редиректим на точку входа
+RewriteRule ^(.*)$ index.php

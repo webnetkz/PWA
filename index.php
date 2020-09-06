@@ -1,39 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>title</title>
+<?php
 
-        <meta charset="UTF-8">
-        <meta name="theme-color" content="rgb(0, 173, 239)">
-        <meta name="author" content="TOO WebNet">
-        <meta name="description" content="RetactorPhoto by WebNet">
-        <meta name="keywords" content="RedactorPhoto">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="index, follow">
+session_start();
 
-        <link rel="shortcut icon" href="/public/images/miniLogoWebnet.png" type="image/png">
-        <link rel="stylesheet" href="/public/styles/style.css">
-        <link rel="stylesheet" href="/public/styles/mobileStyle.css">
-        <link rel="manifest" href="/manifest.json">
-        
-    </head>
+require_once 'app/lib/xDebug/xDebugMod.php';
 
-    <body>
-        
-        <header>
-            <h1 class="indexHeader">EPM</h1>
-        </header>
+use app\core\Router;
+use app\lib\Db;
 
-        
+// Функция автозагрузки классов
+spl_autoload_register(function($class) {
+    
+    // Замена в пути обратных слешей на обычные
+    $path = str_replace('\\', '/', $class.'.php');
+    
+    // Если файл существует, то подключим его
+    if(file_exists($path)) {
+        require_once $path;
+    }
+});
 
-        <script>
-             // Проверка на поддержку service worker
-            if('serviceWorker' in navigator) {
-                navigator.serviceWorker
-                    .register('/sw.js')
-                    .then(function() { console.log("Service Worker Registered"); });
-            }
-        </script>
-        <script src="/public/scripts/main.js"></script>
-    </body>
-</html>
+$router = new Router;
+$router->run();
+
