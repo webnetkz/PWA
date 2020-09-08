@@ -1,6 +1,7 @@
 <?php
 
 namespace app\core;
+use app\core\View;
 
 class Router {
 
@@ -53,14 +54,16 @@ class Router {
                     $controller = new $path($this->params);
                     $controller->$action();
                 } else {
-                    exit('Экшн не найден: '.$action);
+                    // Если экшн не найден
+                    View::errorCode(404);
                 }
             } else {
                 // Если класс не найден
-                exit('Не найден путь: '.$path);
+                View::errorCode(404);
             }
         } else {
-            exit('Маршрут не найден!');
+            // Если маршрут не найден
+            View::errorCode(404);
         }
     }
 }
