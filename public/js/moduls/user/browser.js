@@ -14,5 +14,21 @@ export function getBrowser() {
     // Blink engine detection
     let isBlink = (isChrome || isOpera) && !!window.CSS;
 
-    console.log(isBlink);
+    if(isOpera) {
+        console.log(isOpera);
+    }
+    if(isFirefox) {
+        console.log(isFirefox);
+    }
+    if(isSafari) {
+        console.log(isSafari);
+    }
+    if(isIE) {
+        console.log(isIE);
+    }
+    if(isChrome) {
+        console.log(isChrome);
+    }
+
+
 }
