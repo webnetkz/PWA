@@ -12,6 +12,7 @@
         <meta name="robots" content="index, follow">
 
         <link rel="shortcut icon" href="/public/img/miniLogo.png" type="image/png">
+        <link rel="apple-touch-icon" href="/public/img/logo.png">
         <link rel="stylesheet" href="/public/css/style.css">
         <link rel="stylesheet" href="/public/css/mobileStyle.css">
         <link rel="manifest" href="/manifest.json">

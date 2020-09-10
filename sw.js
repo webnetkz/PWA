@@ -6,13 +6,6 @@ self.addEventListener('install', function(e) {
    caches.open('title').then(function(cache) {
      return cache.addAll([
        '/',
-       '/index.php',
-       '/app/views/layouts/default.php',
-       '/public/img/miniLogo.png',
-       '/public/img/logo.png',
-       '/public/js/main.js',
-       '/public/css/style.css',
-       '/public/css/mobileStyle.css'
      ]);
    })
  );
