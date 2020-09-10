@@ -11,10 +11,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
 
-        <link rel="shortcut icon" href="<?=$_SERVER['HTTP_HOST']?>/public/img/miniLogoWebnet.png" type="image/png">
-        <link rel="stylesheet" href="<?=$_SERVER['HTTP_HOST']?>/public/css/style.css">
-        <link rel="stylesheet" href="<?=$_SERVER['HTTP_HOST']?>/public/css/mobileStyle.css">
-        <link rel="manifest" href="<?=$_SERVER['HTTP_HOST']?>/manifest.json">
+        <link rel="shortcut icon" href="/public/img/miniLogoWebnet.png" type="image/png">
+        <link rel="stylesheet" href="/public/css/style.css">
+        <link rel="stylesheet" href="/public/css/mobileStyle.css">
+        <link rel="manifest" href="/manifest.json">
         
     </head>
 
@@ -32,10 +32,10 @@
              // Проверка браузера на поддержку service worker
             if('serviceWorker' in navigator) {
                 navigator.serviceWorker
-                    .register('<?=$_SERVER['HTTP_HOST']?>/sw.js')
+                    .register('/sw.js')
                     .then(function() { console.log("Service Worker Registered"); });
             }
         </script>
-        <script src="<?=$_SERVER['HTTP_HOST']?>/public/js/main.js" type="module"></script>
+        <script src="/public/js/main.js" type="module"></script>
     </body>
 </html>
