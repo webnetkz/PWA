@@ -1,5 +1,3 @@
-import {showName} from './moduls/test.js';
-import {newVariable} from './moduls/test.js';
+import {addUserData} from './moduls/userData.js';
 
-showName('Admin');
-console.log(newVariable);
+addUserData();
