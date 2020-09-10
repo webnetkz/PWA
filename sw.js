@@ -7,6 +7,7 @@ self.addEventListener('install', function(e) {
      return cache.addAll([
        '/',
        '/index.php',
+       '/app/views/layouts/default.php',
        '/public/img/miniLogo.png',
        '/public/img/logo.png',
        '/public/js/main.js',
