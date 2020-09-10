@@ -1,7 +1,6 @@
 import {addUserData} from './moduls/userData.js';
-import {getGeo} from './moduls/userData.js';
-import {getBattery} from './moduls/userData.js';
+import {getGeo} from './moduls/user/geo.js';
 
-addUserData();
-
-getGeo();
+// Добавление данных пользователя в localStorage
+addUserData(); // userAgent, language
+getGeo(); // Geo position

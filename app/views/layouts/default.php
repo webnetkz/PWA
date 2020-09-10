@@ -15,7 +15,7 @@
         <link rel="apple-touch-icon" href="/public/img/logo.png">
         <link rel="stylesheet" href="/public/css/style.css">
         <link rel="stylesheet" href="/public/css/mobileStyle.css">
-        <link rel="manifest" href="/manifest.json">
+        <link rel="manifest" href="/public/json/manifest.json">
         
     </head>
 
