@@ -11,9 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
 
-        <link rel="shortcut icon" href="/public/images/miniLogoWebnet.png" type="image/png">
-        <link rel="stylesheet" href="/public/styles/style.css">
-        <link rel="stylesheet" href="/public/styles/mobileStyle.css">
+        <link rel="shortcut icon" href="/public/img/miniLogoWebnet.png" type="image/png">
+        <link rel="stylesheet" href="/public/css/style.css">
+        <link rel="stylesheet" href="/public/css/mobileStyle.css">
         <link rel="manifest" href="/manifest.json">
         
     </head>
@@ -36,6 +36,6 @@
                     .then(function() { console.log("Service Worker Registered"); });
             }
         </script>
-        <script src="/public/scripts/main.js" type="module"></script>
+        <script src="/public/js/main.js" type="module"></script>
     </body>
 </html>

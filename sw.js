@@ -7,11 +7,11 @@ self.addEventListener('install', function(e) {
      return cache.addAll([
        '/',
        '/index.php',
-       '/public/images/miniLogoWebnet.png',
-       '/public/images/logoWebnet.png',
-       '/public/scripts/main.js',
-       '/public/styles/style.css',
-       '/public/styles/mobileStyle.css'
+       '/public/img/miniLogo.png',
+       '/public/img/logo.png',
+       '/public/js/main.js',
+       '/public/css/style.css',
+       '/public/css/mobileStyle.css'
      ]);
    })
  );
