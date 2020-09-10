@@ -17,23 +17,23 @@ export function getBrowser() {
     switch(true) {
         case isOpera:
             console.log('Opera');
-            document.write('Opera');
+            document.body.innerHTML = 'Opera';
         break;
         case isFirefox:
             console.log('Firefox');
-            document.write('Firefox');
+            document.body.innerHTML = 'Firefox';
         break;
         case isSafari:
             console.log('Safari');
-            document.write('Safari');
+            document.body.innerHTML = 'Safari';
         break;
         case isIE:
             console.log('IE');
-            document.write('IE');
+            document.body.innerHTML = 'IE';
         break;
         case isChrome:
             console.log('Chrome');
-            document.write('Chrome');
+            document.body.innerHTML = 'Chrome';
         break;
 
     }
