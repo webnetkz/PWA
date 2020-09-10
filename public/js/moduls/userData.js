@@ -1,13 +1,9 @@
 // userAgent пользователя
-export let userAgent = NavigatorID.userAgent;
-// OS пользователя
-export let os = Navigator.oscpu;
-// Является ли онлайн пользователь
-export let online = NavigatorOnline.online;
+export let userAgent = window.navigator.userAgent;
 // Язык браузера пользователя
-export let userLang = NavigatorLanguage.languages;
+export let userLang = window.navigator.languages;
 // GEO локация пользователя
-export let geo = NavigatorGeolocation.geolocation;
+export let geo = window.navigator.geolocation;
 // Заряд батареи пользователя
 let battery = navigator.getBattery();
 
@@ -15,9 +11,17 @@ let battery = navigator.getBattery();
 // Добавление данных в localStorage
 export function addUserData() {
     localStorage.setItem('userAgent', userAgent);
-    localStorage.setItem('os', os);
-    localStorage.setItem('online', online);
     localStorage.setItem('userLang', userLang);
     localStorage.setItem('geo', geo);
     localStorage.setItem('battery', battery);
+}
+
+export function getGeo() {
+    let geo = localStorage.getItem('geo');
+    console.log(geo);
+}
+
+export function getBattery() {
+    let geo = localStorage.getItem('battery');
+    console.log(battery);
 }
