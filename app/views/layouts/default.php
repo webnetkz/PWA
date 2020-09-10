@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
 
-        <link rel="shortcut icon" href="/public/img/miniLogoWebnet.png" type="image/png">
+        <link rel="shortcut icon" href="/public/img/miniLogo.png" type="image/png">
         <link rel="stylesheet" href="/public/css/style.css">
         <link rel="stylesheet" href="/public/css/mobileStyle.css">
         <link rel="manifest" href="/manifest.json">
