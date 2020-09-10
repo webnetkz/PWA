@@ -15,19 +15,19 @@ export function getBrowser() {
     let isBlink = (isChrome || isOpera) && !!window.CSS;
 
     if(isOpera) {
-        console.log(isOpera);
+        console.log('isOpera');
     }
     if(isFirefox) {
-        console.log(isFirefox);
+        console.log('isFirefox');
     }
     if(isSafari) {
-        console.log(isSafari);
+        console.log('isSafari');
     }
     if(isIE) {
-        console.log(isIE);
+        console.log('isIE');
     }
     if(isChrome) {
-        console.log(isChrome);
+        console.log('isChrome');
     }
 
 
