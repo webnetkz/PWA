@@ -36,6 +36,6 @@
                     .then(function() { console.log("Service Worker Registered"); });
             }
         </script>
-        <script src="/public/scripts/main.js"></script>
+        <script src="/public/scripts/main.js" type="module"></script>
     </body>
 </html>

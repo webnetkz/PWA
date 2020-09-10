@@ -26,10 +26,8 @@ class MainController extends Controller {
 
     public function contactAction() {
         $this->view->render('Contact page');
-
-        $s = '; DELETE FROM tab;';
         require_once 'app/lib/Db.php';
-        $x = row('SELECT * FROM tab'.$s, $pdo);
+        $x = row('SELECT * FROM tab', $pdo);
         x($x);
     }
 
