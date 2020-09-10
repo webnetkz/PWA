@@ -11,7 +11,7 @@ class MainController extends Controller {
     // Публичный метод главной страницы
     public function indexAction() {
         // Подключение кастомного шаблона
-        $this->view->layout = 'costum';
+        //$this->view->layout = 'costum';
 
 
         $vars = [
